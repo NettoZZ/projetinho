@@ -6,8 +6,4 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'ComposerAutoloaderInit1759001f9cb8023e31ff6cae999300f6' => $vendorDir . '/composer/autoload_real.php',
-    'Composer\\Autoload\\ClassLoader' => $vendorDir . '/composer/ClassLoader.php',
-    'Composer\\Autoload\\ComposerStaticInit1759001f9cb8023e31ff6cae999300f6' => $vendorDir . '/composer/autoload_static.php',
-    'Somador' => $baseDir . '/new.php',
 );

@@ -1,5 +1,5 @@
 <?php
-class Somador {
+class somador {
   public function soma($a, $b)
   {
     return $a + $b;
