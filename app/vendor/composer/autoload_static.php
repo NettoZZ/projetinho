@@ -6,9 +6,17 @@ namespace Composer\Autoload;
 
 class ComposerStaticInit1759001f9cb8023e31ff6cae999300f6
 {
+    public static $classMap = array (
+        'ComposerAutoloaderInit1759001f9cb8023e31ff6cae999300f6' => __DIR__ . '/..' . '/composer/autoload_real.php',
+        'Composer\\Autoload\\ClassLoader' => __DIR__ . '/..' . '/composer/ClassLoader.php',
+        'Composer\\Autoload\\ComposerStaticInit1759001f9cb8023e31ff6cae999300f6' => __DIR__ . '/..' . '/composer/autoload_static.php',
+        'Somador' => __DIR__ . '/../..' . '/new.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
+            $loader->classMap = ComposerStaticInit1759001f9cb8023e31ff6cae999300f6::$classMap;
 
         }, null, ClassLoader::class);
     }
